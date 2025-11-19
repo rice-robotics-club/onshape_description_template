@@ -74,10 +74,10 @@ project(onshape_description_template) # TODO: replace with package name
   "assets_directory": "meshes",
   "output_filename": "urdf/robot",
   "output_format": "urdf",
-  "document_id": "260e550735e8edce21bf9c86", # TODO: replace with document_id (after d/ in url)
-  "workspace_id": "1dd4a4758e6c79e3140f12ff", # TODO: replace with workspace_id (after w/ in url)
-  "element_id": "eec2ca4f815ab0347effbbd6", # TODO: replace with element_id (after e/ in url)
-  "assembly_name": "FullBot" # TODO: replace with OnShape assembly name
+  "document_id": "", # TODO: insert document_id (after d/ in url)
+  "workspace_id": "", # TODO: insert workspace_id (after w/ in url)
+  "element_id": "", # TODO: insert element_id (after e/ in url)
+  "assembly_name": "" # TODO: insert OnShape assembly name
 }
 ```
 
