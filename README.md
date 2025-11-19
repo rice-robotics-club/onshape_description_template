@@ -7,7 +7,6 @@ a launch file to preview the robot URDF (as this template provides). Overall, th
 as a convention for our robot description packages.
 
 ## Features
----
 This template includes the following features:
 
 1. Copying the URDF file and meshes to `install/` on a `colcon build`.
@@ -44,7 +43,6 @@ from onshape_description_template import JOINT_NAMES
 ```
 
 ## Usage
----
 In order to extend from this template repository, the package name, robot name, and Onshape information need to be specified in the following files.
 
 1. In `package.xml`:
