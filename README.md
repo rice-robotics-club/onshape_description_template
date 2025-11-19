@@ -2,8 +2,7 @@
 
 This repository contains a template for a ROS2 robot description package. By convention, ROS2 packages
 that exist solely to house a robot's URDF files and CAD meshes are usually titled "[robot name]_description".
-These packages can be as simple as a single urdf file, but often include additional features, such as including
-a launch file to preview the robot URDF (as this template provides). Overall, this repository is meant to exist
+These packages can be as simple as a single urdf file, but often include additional features, such as a launch file to preview the robot URDF (as this template provides). Overall, this repository is meant to exist
 as a convention for our robot description packages.
 
 ## Features
