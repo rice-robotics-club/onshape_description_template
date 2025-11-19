@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>onshape_description_template</name> <!-- TODO: replace with package name -->
+  <version>1.0.0</version>
+  <description>
+  	A ROS2 package template for a robot_description package.
+  	Made to easily allow importing URDF from an OnShape assembly.
+	</description>
+  <maintainer email="justin@lopato.org">lopatoj</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
