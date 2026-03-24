@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(onshape_description_template) # TODO: replace with package name
+project(onshape_description)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
