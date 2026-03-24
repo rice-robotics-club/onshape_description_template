@@ -9,7 +9,7 @@ on:
     inputs:
       add_mjcf:
         description: 'Produce a MJCF description'
-        default: true
+        default: false
         required: false
         type: boolean
 
