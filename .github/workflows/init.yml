@@ -13,6 +13,8 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    - name: Checkout repository
+      uses: actions/checkout@v4
     - name: Skip template repo
       id: skip
       run: |
@@ -29,6 +31,7 @@ jobs:
         find: "onshape_description"
         replace: ${{ github.event.repository.name }}
         regex: false
+        exclude:  ".git**"
     - run: |
         git add .
         git commit -m "Initialized ${{ github.event.repository.name }}"
