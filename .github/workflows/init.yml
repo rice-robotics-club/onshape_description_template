@@ -6,7 +6,7 @@ on:
   push:
 
 jobs:
-  greet:
+  initialize:
     runs-on: ubuntu-latest
     steps:
     - name: Configure Git for GitHub Actions Bot
