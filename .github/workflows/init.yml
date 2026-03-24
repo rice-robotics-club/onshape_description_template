@@ -1,0 +1,38 @@
+name: Initialize Repository
+
+permissions: write-all
+
+on:
+  push:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Configure Git for GitHub Actions Bot
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    - name: Skip template repo
+      id: skip
+      run: |
+        if [ "${{ github.event.repository.name }}" == "onshape_description" ]; then
+          echo "should_run=false" >> $GITHUB_OUTPUT
+        else
+          echo "should_run=true" >> $GITHUB_OUTPUT
+        fi
+    - run: mv onshape_description ${{ github.event.repository.name }}
+      if: steps.skip.outputs.should_run == 'true'
+    - uses: jacobtomlinson/gha-find-replace@v3
+      if: steps.skip.outputs.should_run == 'true'
+      with:
+        find: "onshape_description"
+        replace: ${{ github.event.repository.name }}
+        regex: false
+    - run: |
+        git add .
+        git commit -m "Initialized ${{ github.event.repository.name }}"
+        git push
+      if: steps.skip.outputs.should_run == 'true'
+    - uses: lopatoj/suicide@main
+      if: steps.skip.outputs.should_run == 'true'
