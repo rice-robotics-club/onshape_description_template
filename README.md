@@ -5,6 +5,8 @@ that exist solely to house a robot's URDF files and CAD meshes are usually title
 These packages can be as simple as a single urdf file, but often include additional features, such as a launch file to preview the robot URDF (as this template provides). Overall, this repository is meant to exist
 as a convention for our robot description packages.
 
+**Rice Robotics Members!!!** In order for the attached workflow to work, you must create a *public* repository, as the OnShape API key is stored in our organization's secrets, which can only be accessed by a GitHub actions workflow in a public repository.
+
 ## Features
 This template includes the following features:
 
